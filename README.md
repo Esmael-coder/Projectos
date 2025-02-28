@@ -1,2 +1,2 @@
 # Projectos
- Apenas alguns projectos para aperfei;oar meus conhecimentos durante os estudos
+ Apenas alguns projectos para aperfeiçoar meus conhecimentos durante os estudos de front end
