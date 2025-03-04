@@ -38,14 +38,15 @@ body {
     display: flex;
     gap: 30px;
     list-style-type: none;
-
-
-}
+    
+}    
 
 #principal ul a {
     text-decoration: none;
     color: white;
+
 }
+
 
 #principal .icon-social {
     display: flex;
