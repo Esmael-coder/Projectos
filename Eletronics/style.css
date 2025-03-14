@@ -121,6 +121,7 @@ header nav a:hover::after{
 header .icones-nav{
     display: flex;
     gap: 20px;
+    padding-bottom: 20px;
 }
 
 .banner{
@@ -199,8 +200,8 @@ section#produtos img {
     display: flex;
     flex-direction: column;
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 10px;
+    left: 6px;
 
 }
 
@@ -218,14 +219,14 @@ section#produtos img {
 }
 /* adicionando as imagens de fundo de cada div utilizado classes diferentes para cada uma*/
 
-#produtos .container .headphone{
+#produtos .container .apple{
     background-image: url(imagem/apple.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
 }
 
-#produtos .container .apple{
+#produtos .container .headphone{
     background-image: url(imagem/Headphone.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -249,7 +250,7 @@ section#produtos img {
 #produtos .container .blueth{
     background-image: url(imagem/blueth.jpg);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center right;
     background-size: cover;
 }
 
