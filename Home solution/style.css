@@ -13,6 +13,11 @@ body {
     overflow-x: hidden;
 }
 
+section{
+    width: 80%;
+    height: 100dvh;
+    margin: auto;
+}
 
 #principal {
     max-width: 100%;
@@ -23,7 +28,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* estilos menos do header*/
+/* estilos menu do header*/
 
 #principal .navbar {
     position: absolute;
@@ -96,6 +101,25 @@ body {
     cursor: pointer;
 }
 
+#principal .icon-social img {
+    width: 24px;
+    cursor: pointer;
+}
+
+/*estilo menu para despositivos menores*/ 
+#principal .tablet{
+    position: relative;
+    justify-content: flex-end;
+    filter: brightness(0) invert(1);
+    display: none;
+}
+
+#principal .tablet img{
+    width: 24px;
+    cursor: pointer;
+
+}
+
 .text-area {
     background-color: rgba(0, 0, 0, 0.651);
     height: 100dvh;
@@ -129,8 +153,6 @@ body {
 /*estilo section design*/
 
 #design {
-    width: 80%;
-    height: 100dvh;
     margin: auto;
     padding: 0%;
     display: flex;
@@ -196,11 +218,6 @@ body {
 
 /* estilos dos modelos */
 
-#modelos {
-    width: 80%;
-    height: 100dvh;
-    margin: auto;
-}
 
 #modelos .modelo-text {
     text-align: center;
@@ -215,8 +232,8 @@ body {
 }
 
 #modelos p {
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 
 
@@ -255,6 +272,44 @@ body {
     margin-left: 22px;
     display: none;
 }
+
+aside{
+    max-width: 100dvw;
+    height: 300px;
+    background-color: #171717;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside .comentarios{
+    display: flex;
+    gap: 150px;
+}
+
+aside .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 250px;
+}
+
+aside .perfil{
+    background-color: #8a705f;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+aside 
 
 #contact-section {
     width: 100dvw;
@@ -315,3 +370,16 @@ input:active{
     border: none;
 }
 
+@media (max-width: 780px){
+    #principal .navbar{
+        display: none;
+    }
+
+    #principal .tablet{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 15px;
+        top: 10px;
+    }
+}
