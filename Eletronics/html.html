@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    grid-template-areas: 
+        "earphone gadget laptop"
+        "console console vr"
+        "speaker speaker speaker";
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Aplicando cada área */
+.earphone { background: black; grid-area: earphone; }
+.gadget { background: gold; grid-area: gadget; }
+.laptop { background: red; grid-area: laptop; }
+.console { background: lightgray; grid-area: console; }
+.vr { background: green; grid-area: vr; }
+.speaker { background: blue; grid-area: speaker; }
+
+
+    </style>
+    <div class="grid-container">
+        <div class="item earphone">Enjoy With EARPHONE</div>
+        <div class="item gadget">Wear GADGETS</div>
+        <div class="item laptop">Devices LAPTOP</div>
+        <div class="item console">Best Gaming CONSOLE</div>
+        <div class="item vr">Play Game OCULUS</div>
+        <div class="item speaker">Amazon SPEAKER</div>
+    </div>
+</body>
+</html>

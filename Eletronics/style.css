@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wdth,wght@0,75..100,100..700;1,75..100,100..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body{
+    background-color: #f8f9fc;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 142px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+header .logo-social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+header .logo h1{
+    color: #147bfe;
+}
+
+header .support {
+    display: flex;
+    gap: 10px;
+}
+
+header .support a{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+header .formulario{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+header .formulario input {
+    width: 1000px;
+    height: 38px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    border-radius: 7px;
+}
+
+header .formulario label {
+    background-color: #f8f9fc;
+    width: 90px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 7px;
+}
+
+header .social img{
+    width: 20px;
+    margin-left: 15px;
+}
+
+header .nav-bar{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    padding: 10px 10px;
+
+}
+
+header nav{
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+header nav a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+    
+}
+header nav a::after{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #147bfe;
+    bottom: 0;
+    left: 50%;
+    transition: 0.3s ease-in;
+
+}
+
+header nav a:hover::after{
+    width: 100%;
+    left: 0;
+    
+}
+
+header .icones-nav{
+    display: flex;
+    gap: 20px;
+}
+
+.banner{
+    height: 50dvh;
+    background-image: url(imagem/banner2.1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+section{
+    width: 80dvw;
+    height: 100dvh;
+    padding: 0px 5px;
+    margin: auto;
+
+}
+
+section#produtos .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 1000px;
+    max-width: 1140px;
+    margin: 80px auto;
+    height: 70px;
+}
+section#produtos .card{
+    
+    height: 50px;
+    width: 250px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+section#produtos img {
+    width: 45px;
+    padding: 5px;
+    background-color: #f8f9fc;
+    border-radius: 10px;
+}
+
+/* estilos dos produtos com display grid na section produtos*/
+
+#produtos .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+#produtos .device{
+    position: relative;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+
+    
+} 
+
+#produtos .hightlight{
+    height: 620px;  
+}
+
+#produtos .text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+
+}
+
+#produtos .text a{
+    background-color: #147bfe;
+    text-decoration: none;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    
+}
+#produtos .text a:hover{
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.445);
+}
+/* adicionando as imagens de fundo de cada div utilizado classes diferentes para cada uma*/
+
+#produtos .container .headphone{
+    background-image: url(imagem/apple.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#produtos .container .apple{
+    background-image: url(imagem/Headphone.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#produtos .container .hightlight{
+    background-image: url(imagem/maior.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#produtos .container .consola{
+    background-image: url(imagem/consola.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+#produtos .container .blueth{
+    background-image: url(imagem/blueth.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+}
+
+
+@media (max-width: 1400px) {
+
+    header .formulario input {
+        width: 600px;
+    }
+
+    #produtos .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        
+}
+
+#produtos .hightlight{
+    background-color: aqua;
+    height: 420px;
+    
+}
+
+}
+@media (max-width: 768px) {
+    
+}
