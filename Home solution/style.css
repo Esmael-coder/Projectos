@@ -309,7 +309,9 @@ aside .perfil{
     font-weight: bold;
 }
 
-aside 
+aside p{
+    text-align: center;
+}
 
 #contact-section {
     width: 100dvw;
