@@ -275,12 +275,19 @@ section{
 
 aside{
     max-width: 100dvw;
-    height: 300px;
+    height: 350px;
     background-color: #171717;
     margin-bottom: 150px;
     display: flex;
+    gap: 50px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+aside h2{
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 aside .comentarios{
